@@ -64,7 +64,7 @@ Weekends are off in both phases. Rest is part of the plan, because you learn mor
 
 ### Five rules
 
-1. **Type, don't paste.** Type every code example from the books into a notebook yourself. Typing builds the "without constant lookups" fluency SMU says you need.
+1. **Type, don't paste.** Type every code example from the books into a notebook yourself. Typing builds the fluency to work "without constant lookups", which is the readiness benchmark this course uses.
 2. **Try before you look (the 20-minute rule).** On an exercise, struggle for 20 minutes before checking a hint or solution. If you do look, close it and redo the exercise from scratch the next day.
 3. **Predict, then run.** Before running a cell, guess what it will output. Every wrong guess shows you a gap in your understanding.
 4. **Commit every session.** Push your work to this repo. Your Git history becomes your progress record.
@@ -648,7 +648,7 @@ Each day: **Block A** (4 h) in the morning, **Block B** (2 h) in the afternoon. 
 
 **About 16 h, 8 units. Track A, Phase 2 days 4–7. Main text: PDA chapters 7–11 and 13.**
 
-This is the module behind SMU's readiness test: *"take a messy CSV, clean it, group it, and plot it without constant lookups."*
+This module builds toward the course's main Python readiness test: *take a messy CSV, clean it, group it, and plot it without constant lookups.*
 
 #### Unit 5.1: Missing data and transformation (2 h)
 
