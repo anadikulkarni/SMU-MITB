@@ -1,0 +1,17 @@
+# Python and Jupyter caches
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+.pytest_cache/
+
+# Downloaded datasets: re-download them instead of committing large files
+data/
+
+# Generated Module 5 checkpoint files (rerun make_messy_sales.py to recreate them)
+checkpoints/module5/messy_sales.csv
+checkpoints/module5/messy_sales_answers.json
+
+# Secrets and OS clutter
+.env
+.DS_Store
+Thumbs.db
