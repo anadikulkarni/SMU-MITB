@@ -2,7 +2,7 @@
 
 My preparation for SMU's MITB (Data Science & Analytics) programme.
 
-**Start here: [COURSE.md](COURSE.md).** It's a self-paced, 60-day course with 12 modules covering Python, pandas, statistics, SQL and data modelling, linear algebra, Excel decision modelling and machine learning, built around *Python for Data Analysis* and *Hands-On Machine Learning*.
+**Start here: [COURSE.md](COURSE.md).** It's a self-paced, 60-day course with 12 modules covering Python, pandas, statistics, SQL and data modelling, linear algebra, Excel decision modelling and machine learning, built around *Python for Data Analysis* and *Hands-On Machine Learning*, with *Fluent Python* for deeper Python.
 
 | Folder | What's in it |
 |---|---|
