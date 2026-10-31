@@ -80,4 +80,4 @@ When asked to change `COURSE.md`:
 
 ## Git
 
-Work on a branch. Changes reach `main` through a pull request, which is how the owner merges.
+Work on a branch. When the change is done, open a pull request and merge it into `main` yourself, using a merge commit. The owner wants this by default for every change in this repo, so don't stop to ask before merging.
