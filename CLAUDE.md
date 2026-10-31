@@ -73,11 +73,11 @@ When asked to change `COURSE.md`:
 
 - If you add, remove or renumber a unit, update everything that depends on it: the course map, the Phase 2 pacing table, the hour and day counts in module headers, cross-references such as "Unit 6.8", and the progress tracker in Appendix D.
 - Compute every numeric answer with NumPy or SciPy before you write it down, and put answers inside `<details>` blocks.
-- Check the edition before citing chapters: PDA 3rd edition; the PyTorch edition of HOML (its chapter numbers differ from the Keras/TensorFlow editions, and SVMs are in Appendix C); *Fluent Python* 2nd edition (its chapter numbers differ from the 1st edition, so keep the mapping note at the top of `COURSE.md` up to date when you cite a new FP chapter); *Think Stats* 3rd edition; *OpenIntro Statistics* 4th edition; and ISLP, the Python edition.
+- Check the edition before citing chapters: PDA 3rd edition; the PyTorch edition of HOML (its chapter numbers differ from the Keras/TensorFlow editions, and SVMs are in Appendix C); *Fluent Python* 2nd edition (2022), which is the owner's copy (its chapter numbers differ from the 1st edition, so cite 2nd-edition numbers only); *Think Stats* 3rd edition; *OpenIntro Statistics* 4th edition; and ISLP, the Python edition.
 - Don't add Coursera courses, links or materials anywhere. The owner asked for this explicitly.
 - Only attribute something to SMU if it comes from SMU's own published material.
 - After editing, check that every `](#anchor)` link still matches a heading.
 
 ## Git
 
-Work on a branch. Changes reach `main` through a pull request, which is how the owner merges.
+Work on a branch. When the change is done, open a pull request and merge it into `main` yourself, using a merge commit. The owner wants this by default for every change in this repo, so don't stop to ask before merging.
