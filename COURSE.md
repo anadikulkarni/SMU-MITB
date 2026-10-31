@@ -7,13 +7,19 @@ It's built around the two books you own:
 - **PDA**: *Python for Data Analysis*, 3rd edition, Wes McKinney (O'Reilly, 2022). A free copy is online at <https://wesmckinney.com/book/>, which is handy for searching. The datasets are in the [pydata-book repo](https://github.com/wesm/pydata-book) on the `3rd-edition` branch.
 - **HOML**: *Hands-On Machine Learning with Scikit-Learn and PyTorch*, Aurélien Géron (O'Reilly, 2025). The notebooks and exercise solutions are in the [handson-mlp repo](https://github.com/ageron/handson-mlp).
 
+A third book you own goes deeper into Python itself:
+
+- **FP**: *Fluent Python*, 2nd edition, Luciano Ramalho (O'Reilly, 2022). The example code is in the [example-code-2e repo](https://github.com/fluentpython/example-code-2e). FP is written for people who already know basic Python, so the course brings it in only after PDA or the Python tutorial has covered a topic. Phase 1 uses it for how Python objects really work: variables and mutability, special ("dunder") methods, classes and data classes. The rest is marked **(depth)**, meaning optional further reading.
+
 Free resources fill the gaps, mainly *Think Stats* 3rd edition, *OpenIntro Statistics*, *ISLP*, 3Blue1Brown, StatQuest, HackerRank and LeetCode. They're all listed in [Appendix A](#appendix-a-resource-directory).
 
 The course also covers every topic on SMU's recommended preparation list for Data Science & Analytics students: Python basics, linear algebra, introductory statistics and SQL.
 
-"PDA 3.2" means chapter 3, section 2. "HOML ch 4" means chapter 4 of the PyTorch edition.
+"PDA 3.2" means chapter 3, section 2. "HOML ch 4" means chapter 4 of the PyTorch edition. "FP ch 6" means chapter 6 of *Fluent Python*'s 2nd edition. FP's sections aren't numbered, so the course names them instead.
 
 > **If your PDA is the 2nd edition (2017):** chapters 1–11 have the same titles and nearly the same contents. Chapter 12 of the 2nd edition ("Advanced pandas") is optional, its chapter 13 is the 3rd edition's chapter 12, and its chapter 14 is the 3rd edition's chapter 13.
+
+> **If your *Fluent Python* is the 1st edition (2015):** the chapters this course mentions map like this (2nd → 1st): 1 → 1, 2 → 2, 3 → 3, 4 → 4, 6 → 8, 7 → 5, 9 → 7, 11 → 9, 12 → 10, 13 → 11, 14 → 12, 16 → 13, 17 → 14, 18 → 15. Chapters 5 (*Data Class Builders*) and 8 (*Type Hints in Functions*) only exist in the 2nd edition. For chapter 5, read the [`dataclasses` docs](https://docs.python.org/3/library/dataclasses.html) instead.
 
 ---
 
@@ -52,7 +58,7 @@ The course also covers every topic on SMU's recommended preparation list for Dat
 
 | Phase | Days | Your time | Sessions | Hours |
 |---|---|---|---|---|
-| **Phase 1**: Python foundations | 1–30 (working) | 1–2 h per weekday evening | ~21 | ~30 |
+| **Phase 1**: Python foundations | 1–30 (working) | 1–2 h per weekday evening | ~21 | ~32 |
 | **Phase 2**: full-time sprint | 31–60 | ~6 h per weekday | ~21–22 | ~120 + buffer |
 
 Weekends are off in both phases. Rest is part of the plan, because you learn more over the long run that way.
@@ -62,7 +68,8 @@ Weekends are off in both phases. Rest is part of the plan, because you learn mor
 - A **module** is one skill area, such as "Statistics in Python".
 - A **unit** is one sitting. In Phase 1 that's 60–90 minutes; in Phase 2 it's about 2 hours. Each unit tells you exactly what to **Read**, **Watch**, **Code** and **Practise**, and ends with a **Done when** test.
 - A **checkpoint** ends each module. It's a timed, hands-on test, and some checkpoints mark themselves (the Phase 1 tests, the Module 5 answer key). **Move on when you pass the checkpoint, not when the calendar says so.**
-- Items marked **(stretch)** are optional. Do them only if you're ahead.
+- Items marked **(stretch)** are optional extra practice. Do them only if you're ahead.
+- Items marked **(depth)** are optional extra reading, mostly in *Fluent Python*. Read them when a topic has clicked and you want to understand how Python does it under the hood.
 
 ### Five rules
 
@@ -96,7 +103,7 @@ SMU-MITB/
 |---|---|---|---|---|---|
 | 0 | Setup and workflow | P1 | 2 | run Python, Jupyter, Git and VS Code from a clean install | everything |
 | 1 | Python core refresh | P1 | 10 | write correct Python with input and output, loops, the built-in data structures, comprehensions, functions and files | Computational Thinking with Python |
-| 2 | OOP, modules and regex | P1 | 10 | design small class hierarchies and parse text with regular expressions | Computational Thinking with Python; scikit-learn custom transformers |
+| 2 | OOP, modules and regex | P1 | 12 | design small, idiomatic class hierarchies with special methods and data classes; parse text with regular expressions | Computational Thinking with Python; scikit-learn custom transformers |
 | 3 | Command line and Git | P1 | 4 | work in a terminal and use Git/GitHub for your own and group work | Query Processing; every group project |
 | – | Side tracks (linear algebra videos, SQL warm-ups) | P1 | 3–6 | understand vectors and matrices geometrically; keep SQL fresh | Applied ML; Data Management |
 | – | **Phase 1 checkpoint** | P1 | 2 | pass 29 automated tests in 2 hours | — |
@@ -109,7 +116,7 @@ SMU-MITB/
 | 10 | Machine learning with scikit-learn | P2 · A | 20 | run the full scikit-learn workflow: pipelines, CV, tuning, metrics, trees, ensembles, SVMs, PCA, MLPs | Applied ML, Data Science for Business, GenAI with LLMs |
 | 11 | Capstone (SQL → pandas → stats → ML → Excel) | P2 · A+B | 12 | run an end-to-end analytics project and write it up | all of the above |
 
-**Total: about 30 hours in Phase 1 and 118 hours in Phase 2, plus 2 buffer days.** Modules 4 and 5 each have one extra (stretch) unit if you have time.
+**Total: about 32 hours in Phase 1 and 118 hours in Phase 2, plus 2 buffer days.** Modules 4 and 5 each have one extra (stretch) unit if you have time.
 
 **What this course leaves out on purpose:** SAS JMP Pro / Enterprise Miner (Data Analytics Lab) and Hadoop, Spark and Kafka (Big Data). Those courses teach them from scratch, so studying them now pays off less than strengthening the foundations they build on.
 
@@ -132,11 +139,11 @@ SMU-MITB/
 |---|---|
 | 1 | 0.1 · 0.2 · 1.1 · 1.2 · 1.3 |
 | 2 | 1.4 · 1.5 · 1.6 · 2.1 · 2.2 |
-| 3 | 2.3 · 2.4 · 2.5 · 2.6 · 2.7 |
-| 4 | 3.1 · 3.2 · 3.3 · **Phase 1 checkpoint** · buffer |
-| Leftover weekdays | Buffer, redo checkpoint tasks you failed, side tracks |
+| 3 | 2.3 · 2.4 (evening 1) · 2.4 (evening 2) · 2.5 · 2.6 |
+| 4 | 2.7 · 3.1 · 3.2 · 3.3 · **Phase 1 checkpoint** |
+| Leftover weekdays | Buffer, redo checkpoint tasks you failed, side tracks, (depth) reading |
 
-**If you fall behind:** drop the (stretch) items first. Next, cut each HackerRank list to its first three problems. If you're still behind, move Module 3 into the first Block B afternoons of Phase 2; the Phase 2 buffer absorbs that. **Never skip Units 1.3–1.5 or 2.2–2.6.**
+**If you fall behind:** drop the (stretch) and (depth) items first. Next, cut each HackerRank list to its first three problems. If you're still behind, move Module 3 into the first Block B afternoons of Phase 2; the Phase 2 buffer absorbs that. **Never skip Units 1.3–1.5 or 2.2–2.6.**
 
 **If you're ahead:** do the [SQL warm-ups](#side-track-sql-0-sql-warm-ups-optional), then start PDA chapter 4 (Unit 4.1).
 
@@ -250,7 +257,7 @@ This module rebuilds the basics quickly but properly. Downstream courses assume 
 1. **The big picture** (10 minutes). When you run a script, the Python *interpreter* translates your code into instructions for the **CPU**. The CPU works on data held in **main memory** (RAM), which is fast but is wiped when the program ends. Anything that has to last is saved to **secondary storage** (an SSD or disk), which is much slower to reach. A program talks to the outside world through **input and output**: the keyboard, the screen, files and the network. So most programs follow an *input → process → output* pattern. Keep this picture in mind, because it explains later topics: why pandas loads a whole file into memory, and why databases need indexes.
 2. **Read** PDA 2.3, the "Language Semantics" and "Scalar Types" parts. Type every example into `work/m1/1_1_semantics.ipynb`.
 3. Pay particular attention to these:
-   - Variables are *references*: after `a = b = []`, both names point to the same list.
+   - Variables are *references*: after `a = b = []`, both names point to the same list. (FP ch 6 explains this properly; you'll read it in Unit 1.5.)
    - Mutable vs immutable types.
    - Python is dynamically but *strongly* typed: `"5" + 5` is an error.
    - `is` vs `==`, `None`, f-strings, and `datetime` basics.
@@ -301,6 +308,7 @@ This module rebuilds the basics quickly but properly. Downstream courses assume 
    - Sort by score (highest first), breaking ties by name: `sorted(..., key=lambda t: (-t[1], t[0]))`.
    - Print a ranking like `1. Raj (93)` using `enumerate(start=1)`.
    - Split the names and scores into two tuples with `zip(*scores)`.
+4. (Depth) FP ch 2, *An Array of Sequences*: the parts on tuples, unpacking and slicing. It explains why tuples work well as records, and why slices leave out the last item.
 
 **Done when** you can write the sort key without looking it up.
 
@@ -316,25 +324,29 @@ This module rebuilds the basics quickly but properly. Downstream courses assume 
    3. A flattened `[[1, 2], [3], [4, 5, 6]]`, using a nested comprehension.
    4. An inverted dict, `{v: k for ...}`. What happens when two keys share a value?
    5. The set of lower-cased first letters of a list of names.
+4. (Depth) FP ch 3, *Dictionaries and Sets*: the parts on handling missing keys (`setdefault`, `defaultdict` and `__missing__`) and on set operations. It also explains why only *hashable* objects can be dict keys or set members.
 
 **Done when** you can do all five without looking anything up.
 
-#### Unit 1.5: Functions, generators and errors (90 min)
+#### Unit 1.5: Functions, generators and errors (90–120 min)
 
 1. **Read** all of PDA 3.2: Namespaces, Scope, and Local Functions; Returning Multiple Values; Functions Are Objects; Anonymous (Lambda) Functions; Generators (including generator expressions and `itertools`); Errors and Exception Handling.
    - In "Functions Are Objects", close the book after reading the `clean_strings` example and rebuild it from memory.
-2. **Practise**, HackerRank:
+2. **Read** FP ch 6, *Object References, Mutability, and Recycling*: the sections from *Variables Are Not Boxes* through *Function Parameters as References* (about 25 minutes). It's the clearest explanation of what a Python variable really is: when two names share one object, why `==` and `is` differ, what a shallow copy copies, and why a mutable default argument is a bug, which you'll demonstrate in step 4.
+3. **Practise**, HackerRank:
    - Python Functionals: *Map and Lambda Function*, *Reduce Function*.
    - Built-Ins: *Zipped!*, *Athlete Sort*, *Any or All*, *ginortS*.
-   - Itertools: *itertools.product()*, *itertools.combinations()*, *Compress the String!*.
    - Errors and Exceptions: *Exceptions*.
-3. **Code**:
+   - (Stretch) Itertools: *itertools.product()*, *itertools.combinations()*, *Compress the String!*.
+4. **Code**:
    - Refactor `tariff.py` from Unit 1.2 so the calculation lives in a function `compute_bill(kwh)` that *returns* the amount, while `main()` handles the input and printing. Then explain in a comment why a function that returns a value is more useful than one that only prints it.
    - A generator `read_numbers(lines)` that yields floats and skips bad lines using `try`/`except ValueError`.
    - A function that takes `*args` and `**kwargs` and prints what it received.
    - Show the mutable-default-argument bug: `def add(x, items=[])`. Call it twice, explain what you see, then fix it with `items=None`.
+   - Show the list-of-lists trap: `grid = [[0] * 3] * 3`, then `grid[0][0] = 1`. Print `grid`, and explain the result using what FP ch 6 says about references. Then build the grid correctly with a comprehension.
+5. (Depth) FP ch 7, *Functions as First-Class Objects*, and the first half of ch 9, *Decorators and Closures*, up to and including implementing a simple decorator. Decorators are functions that wrap other functions; you'll see them as `@property`, `@classmethod` and `@dataclass` in Module 2. (Stretch: HackerRank → Closures and Decorators: *Standardize Mobile Number Using Decorators* and *Decorators 2 - Name Directory*.)
 
-**Done when** you can explain the difference between returning and printing, and why `items=[]` as a default argument is a bug.
+**Done when** you can explain the difference between returning and printing, why `items=[]` as a default argument is a bug, and what went wrong in the grid.
 
 #### Unit 1.6: Files, and a mini-project (90–120 min)
 
@@ -351,6 +363,7 @@ This module rebuilds the basics quickly but properly. Downstream courses assume 
       python work/m1/wordstats.py data/pride_and_prejudice.txt
       ```
 3. Commit and push.
+4. (Depth) FP ch 4, *Unicode Text Versus Bytes*: the parts on encode/decode problems and on handling text files. It explains `UnicodeDecodeError`, and why you should always pass `encoding=` to `open()`.
 
 **Module 1 is done when** `wordstats.py` runs from the terminal and you can explain every line.
 
@@ -358,7 +371,7 @@ This module rebuilds the basics quickly but properly. Downstream courses assume 
 
 ### Module 2: OOP, modules and regular expressions
 
-**About 10 h, 7 units.**
+**About 12 h, 7 units. Unit 2.4 takes two evenings.**
 
 **Why this matters:** SMU's Computational Thinking with Python goes into object-oriented programming and regular expressions, and both show up again later. scikit-learn *is* object-oriented: in HOML chapter 2 you'll write your own transformer class with `fit()` and `transform()` methods. In pandas, regex is how you clean text columns (`.str.extract`, `.str.replace`).
 
@@ -385,33 +398,44 @@ This module rebuilds the basics quickly but properly. Downstream courses assume 
 
 **Done when** you can explain the difference between a class variable and an instance variable.
 
-#### Unit 2.3: Inheritance, classmethods and staticmethods (90 min)
+#### Unit 2.3: Inheritance, classmethods and staticmethods (90–120 min)
 
 1. **Watch** Corey Schafer's *OOP Tutorial 3: classmethods and staticmethods* and *OOP Tutorial 4: Inheritance - Creating Subclasses*.
 2. **Read** Python tutorial 9.5, *Inheritance*.
-3. **Code**, extending `bank.py`:
+3. **Read** FP ch 11, *A Pythonic Object*, from the start through the comparison of `classmethod` and `staticmethod` (about 20 minutes). It builds a `Vector2d` class step by step, including the two ways of printing an object (`__repr__` and `__str__`) and an alternative constructor written as a classmethod. That's the pattern you'll use for `from_csv_row` below.
+4. **Code**, extending `bank.py`:
    - `SavingsAccount(Account)` with an `interest_rate` and an `add_interest()` method.
    - `CheckingAccount(Account)` with an `overdraft_limit`. Override `withdraw()` and call `super()` where you can.
    - A classmethod `Account.from_csv_row("Alice,100.0")` as an alternative constructor.
    - A staticmethod `Account.is_valid_amount(x)`.
    - Try `isinstance()` and `issubclass()` on your classes.
+5. (Depth) FP ch 14, *Inheritance: For Better or for Worse*: the parts on `super()` and on why subclassing built-in types such as `dict` is tricky.
 
 **Done when** `CheckingAccount("Bo", 50, overdraft_limit=100).withdraw(120)` works, and withdrawing 200 raises an error.
 
-#### Unit 2.4: Dunder methods, properties and dataclasses (90 min)
+#### Unit 2.4: Dunder methods, properties and dataclasses (2 evenings, about 3 h)
 
-1. **Watch** Corey Schafer's *OOP Tutorial 5: Special (Magic/Dunder) Methods* and *OOP Tutorial 6: Property Decorators - Getters, Setters, and Deleters*.
-2. **Read** the introduction and first examples of the [`dataclasses` docs](https://docs.python.org/3/library/dataclasses.html).
+**Evening 1: special methods.**
+
+1. **Read** FP ch 1, *The Python Data Model*, the whole chapter (about 45 minutes). It's the best explanation of how special ("dunder") methods plug your own classes into Python's syntax: `len()`, indexing with `[]`, `for` loops, `+`, `abs()` and printing. Type the `FrenchDeck` and `Vector` examples into a notebook and try them out.
+2. **Watch** Corey Schafer's *OOP Tutorial 5: Special (Magic/Dunder) Methods*.
 3. **Code**:
    - Give `Account` `__repr__`, `__str__`, `__eq__` and `__lt__` (comparing by balance).
+   - Write a `Bank` container class with `__len__`, `__iter__`, `__getitem__` (look up by owner) and `total_deposits()`. Check that `len(bank)`, `for account in bank` and `sorted(bank)` all work.
+4. **Practise**, HackerRank → Classes: *Classes: Dealing with Complex Numbers*, which is great dunder-method practice. (Stretch: *Class 2 - Find the Torsional Angle*.)
+
+**Evening 2: properties and data classes.**
+
+1. **Watch** Corey Schafer's *OOP Tutorial 6: Property Decorators - Getters, Setters, and Deleters*.
+2. **Read** FP ch 5, *Data Class Builders* (about 40 minutes): the overview, and the sections on classic named tuples, typed named tuples and `@dataclass`. Skim the type-hint primer and the field options, then read *Data Class as a Code Smell*, on when a class needs real methods rather than just fields.
+3. **Code**:
    - Make `balance` a read-only `@property` backed by `_balance`.
    - Write a `@dataclass(frozen=True) class Transaction` with `amount`, `kind` and `timestamp`. Each account keeps a list of its transactions.
-   - Write a `Bank` container class with `__len__`, `__iter__`, `__getitem__` (look up by owner) and `total_deposits()`. Check that `sorted(bank)` works.
-4. **Practise**, HackerRank → Classes: *Classes: Dealing with Complex Numbers*, which is great dunder-method practice. (Stretch: *Class 2 - Find the Torsional Angle*.)
+   - Write the same record as a `typing.NamedTuple`. In a comment, say when you'd pick a named tuple, a data class, or a full class.
 
 > **Connection:** HOML chapter 2 has `class ClusterSimilarity(BaseEstimator, TransformerMixin)` with `fit()` and `transform()`. After this unit, that code will read naturally.
 
-**Done when** you can say what `__repr__`, `__eq__` and `__lt__` each enable.
+**Done when** you can say what `__repr__`, `__eq__`, `__lt__`, `__len__` and `__getitem__` each enable, and what `@dataclass` writes for you.
 
 #### Unit 2.5: Regular expressions I (90 min)
 
@@ -1561,6 +1585,7 @@ You've done some ML before, so the point here is to rebuild it with the rigour A
 
 1. HOML chapter 2: Prepare the Data (cleaning with `SimpleImputer`, `OneHotEncoder`, feature scaling, custom transformers including `ClusterSimilarity`, `Pipeline` and `ColumnTransformer`), Select and Train a Model, and Better Evaluation Using Cross-Validation.
 2. **Key rule:** every preprocessing step goes *inside* the pipeline, so cross-validation never sees test-fold statistics. Write one paragraph explaining why fitting a scaler on the full dataset before splitting is a leak.
+3. (Depth) Why does your own `ClusterSimilarity` class work inside a `Pipeline`? scikit-learn relies on *duck typing*: any object with `fit` and `transform` methods is accepted, whatever class it comes from. `BaseEstimator` and `TransformerMixin` are *mixin* classes that add `get_params`, `set_params` and `fit_transform` for free. FP ch 13, *Interfaces, Protocols, and ABCs* (the part on duck typing), and FP ch 14 (the part on mixin classes) explain both ideas.
 
 #### Unit 10.3: Fine-tuning, and the chapter 2 exercises
 
@@ -1694,6 +1719,13 @@ Save these queries in `work/capstone/analysis.sql`:
 
 **Once term starts,** keep your skills warm with 2–3 LeetCode SQL or HackerRank problems a week. Keep committing coursework to a repo like this one.
 
+**Keep reading *Fluent Python* during your first term**, one chapter a week, typing the examples as you go:
+
+- Chapters 2 and 3 (sequences, dicts and sets) in full, then 7 and 9 (functions, closures and decorators).
+- Chapter 8 (type hints in functions) before your first group project. Type hints make shared code easier to read and check.
+- Chapters 12, 13 and 16 (sequence methods, protocols and operator overloading), then 17 (iterators and generators) and 18 (`with` blocks and context managers).
+- Leave the concurrency and metaprogramming chapters (19–24) unless you're curious.
+
 ---
 
 ## Appendix A: Resource directory
@@ -1702,6 +1734,7 @@ Save these queries in `work/capstone/analysis.sql`:
 |---|---|---|
 | *Python for Data Analysis*, 3rd ed. (your copy; free online too) | M0–M5 | <https://wesmckinney.com/book/> · data: <https://github.com/wesm/pydata-book> (branch `3rd-edition`) |
 | *Hands-On ML with Scikit-Learn and PyTorch* (your copy) | M8, M10 | notebooks, including `math_linear_algebra.ipynb`: <https://github.com/ageron/handson-mlp> |
+| *Fluent Python*, 2nd ed. (your copy) | M1, M2, M10, after the course | example code: <https://github.com/fluentpython/example-code-2e> |
 | Python tutorial and docs | M1–M2 | <https://docs.python.org/3/tutorial/> |
 | Python Regular Expression HOWTO | M2 | <https://docs.python.org/3/howto/regex.html> |
 | RegexOne (interactive regex lessons) | M2 | <https://regexone.com/> |
@@ -1776,7 +1809,7 @@ Tick these off in your editor as you go: change `[ ]` to `[x]`.
 **Phase 1**
 - [ ] 0.1 Install toolkit · [ ] 0.2 Jupyter and folders
 - [ ] 1.1 How programs run + `bill_split.py` · [ ] 1.2 Control flow, `tariff.py`, `number_stats.py` · [ ] 1.3 Tuples and lists · [ ] 1.4 Dicts, sets, comprehensions · [ ] 1.5 Functions, generators, errors · [ ] 1.6 Files + `wordstats.py`
-- [ ] 2.1 Exceptions and modules · [ ] 2.2 Classes · [ ] 2.3 Inheritance · [ ] 2.4 Dunders, properties, dataclasses · [ ] 2.5 Regex I · [ ] 2.6 Regex II · [ ] 2.7 `sshlog.py`
+- [ ] 2.1 Exceptions and modules · [ ] 2.2 Classes · [ ] 2.3 Inheritance · [ ] 2.4 Dunders (evening 1) · [ ] 2.4 Properties and data classes (evening 2) · [ ] 2.5 Regex I · [ ] 2.6 Regex II · [ ] 2.7 `sshlog.py`
 - [ ] 3.1 Shell basics · [ ] 3.2 Pipes and filters · [ ] 3.3 Git
 - [ ] LA-1 videos 1–9 and quick checks · [ ] SQL-0 (optional)
 - [ ] **Phase 1 checkpoint: 29/29 tests passing**

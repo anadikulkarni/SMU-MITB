@@ -4,7 +4,7 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ## What this repo is
 
-A private learning repo. The owner is preparing for SMU's MITB (Data Science & Analytics) programme by working through the self-paced, 60-day course in `COURSE.md`. The course is built around two books the owner has in print: *Python for Data Analysis*, 3rd edition (PDA) and *Hands-On Machine Learning with Scikit-Learn and PyTorch* (HOML, 2025).
+A private learning repo. The owner is preparing for SMU's MITB (Data Science & Analytics) programme by working through the self-paced, 60-day course in `COURSE.md`. The course is built around two books the owner has in print: *Python for Data Analysis*, 3rd edition (PDA) and *Hands-On Machine Learning with Scikit-Learn and PyTorch* (HOML, 2025). It also uses a third book they own, *Fluent Python*, 2nd edition (FP), for deeper Python: the object model in Modules 1–2, and optional "(depth)" reading elsewhere.
 
 The owner studied Python basics and pandas a long time ago and has forgotten most of it. They have used SQL and some machine learning before, and have strong GRE-level maths but no linear algebra background.
 
@@ -32,7 +32,7 @@ The owner wants detailed explanations, always. A hint can explain the underlying
 - Define every technical term the first time you use it. Don't assume knowledge beyond the units they've reached.
 - For code, explain *why* each step is there, not just what it does, and show how to check the result: an `assert`, a printed shape, or a quick plot.
 - For statistics, always include interpretation: what a result does and doesn't tell you.
-- Point to further reading in the course's books by section number.
+- Point to further reading in the course's books by chapter and section. FP doesn't number its sections, so name them instead.
 - When teaching a new concept, end with one short self-check question, and give its answer only if asked.
 - Explain your own actions too: when you run a command or change a file, say what it does and why.
 
@@ -73,7 +73,7 @@ When asked to change `COURSE.md`:
 
 - If you add, remove or renumber a unit, update everything that depends on it: the course map, the Phase 2 pacing table, the hour and day counts in module headers, cross-references such as "Unit 6.8", and the progress tracker in Appendix D.
 - Compute every numeric answer with NumPy or SciPy before you write it down, and put answers inside `<details>` blocks.
-- Check the edition before citing chapters: PDA 3rd edition; the PyTorch edition of HOML (its chapter numbers differ from the Keras/TensorFlow editions, and SVMs are in Appendix C); *Think Stats* 3rd edition; *OpenIntro Statistics* 4th edition; and ISLP, the Python edition.
+- Check the edition before citing chapters: PDA 3rd edition; the PyTorch edition of HOML (its chapter numbers differ from the Keras/TensorFlow editions, and SVMs are in Appendix C); *Fluent Python* 2nd edition (its chapter numbers differ from the 1st edition, so keep the mapping note at the top of `COURSE.md` up to date when you cite a new FP chapter); *Think Stats* 3rd edition; *OpenIntro Statistics* 4th edition; and ISLP, the Python edition.
 - Don't add Coursera courses, links or materials anywhere. The owner asked for this explicitly.
 - Only attribute something to SMU if it comes from SMU's own published material.
 - After editing, check that every `](#anchor)` link still matches a heading.
