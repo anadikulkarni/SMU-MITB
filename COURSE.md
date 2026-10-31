@@ -19,8 +19,6 @@ The course also covers every topic on SMU's recommended preparation list for Dat
 
 > **If your PDA is the 2nd edition (2017):** chapters 1–11 have the same titles and nearly the same contents. Chapter 12 of the 2nd edition ("Advanced pandas") is optional, its chapter 13 is the 3rd edition's chapter 12, and its chapter 14 is the 3rd edition's chapter 13.
 
-> **If your *Fluent Python* is the 1st edition (2015):** the chapters this course mentions map like this (2nd → 1st): 1 → 1, 2 → 2, 3 → 3, 4 → 4, 6 → 8, 7 → 5, 9 → 7, 11 → 9, 12 → 10, 13 → 11, 14 → 12, 16 → 13, 17 → 14, 18 → 15. Chapters 5 (*Data Class Builders*) and 8 (*Type Hints in Functions*) only exist in the 2nd edition. For chapter 5, read the [`dataclasses` docs](https://docs.python.org/3/library/dataclasses.html) instead.
-
 ---
 
 ## Contents
