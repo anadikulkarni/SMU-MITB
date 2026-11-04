@@ -29,6 +29,15 @@
 
 ## 2026-11-3 - HackerRank and Two More Apps
 
-- Made a list of Python string methods
-- Coded tariff.py and number_stats.py
-- HackerRank String problems (The Minion Game and Merge the Tools are still left)
+- Learnt Python string methods
+- Learnt for loops and bands by coding tariff.py
+- Learnt while loops and smallest/largest comparisons by coding number_stats.py
+- HackerRank basic string problems done
+
+## 2026-11-4 - HackerRank Hard Problems
+
+- Did Merge the Tools and The Minion Game on HackerRank (very fun problems!)
+- Wrote two functions in strings.py: 
+    - caesar() helped me learn text indexing and loop-based manipulation.
+    - is_palindrome() helped me learn troubleshooting
+- Learnt how the assert keyword works
